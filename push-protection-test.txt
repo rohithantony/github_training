@@ -1,4 +1,0 @@
-Push protection test fixture.
-
-# Deliberately fake high-entropy GitHub token-shaped value.
-GITHUB_TOKEN=github_pat_11AABBCCDDEEFF00112233_0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef
