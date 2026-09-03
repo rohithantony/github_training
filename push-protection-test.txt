@@ -1,0 +1,4 @@
+Push protection test fixture.
+
+This is a deliberately fake GitHub token-shaped value for testing secret scanning:
+ghp_1234567890abcdefghijklmnopqrstuvwxyz
