@@ -1,20 +1,14 @@
-import subprocess
+import sqlite3
 
-def run_command():
-    command = input("Enter a command: ")
+def search_user():
+    username = input("Enter username: ")
 
-    # Vulnerable: completely user-controlled input reaches a shell
-    result = subprocess.Popen(
-        command,
-        shell=True,
-        stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE
-    )
+    conn = sqlite3.connect("users.db")
 
-    output, error = result.communicate()
+    query = "SELECT * FROM users WHERE username = '" + username + "'"
 
-    print(output.decode())
-    print(error.decode())
+    cursor = conn.execute(query)
+    print(cursor.fetchall())
 
 if __name__ == "__main__":
-    run_command()
+    search_user()
