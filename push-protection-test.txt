@@ -1,4 +1,4 @@
 Push protection test fixture.
 
-This is a deliberately fake GitHub token-shaped value for testing secret scanning:
-ghp_1234567890abcdefghijklmnopqrstuvwxyz
+# Deliberately fake high-entropy GitHub token-shaped value.
+GITHUB_TOKEN=github_pat_11AABBCCDDEEFF00112233_0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef
